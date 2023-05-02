@@ -32,6 +32,11 @@ public class Dbprograming3 {
             Statement statement = con.createStatement();
             String sql = "select * from student";
             ResultSet results = statement.executeQuery(sql);
+            
+            while(results.next()) {
+                System.out.println(results.getString(1)+" "+results.getString(2)+" "+results.getString(3));
+            }
+            
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Dbprograming3.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
