@@ -34,7 +34,7 @@ public class Dbprograming3 {
             ResultSet results = statement.executeQuery(sql);
             
             while(results.next()) {
-                System.out.println(results.getString(1)+" "+results.getString(2)+" "+results.getString(3));
+                System.out.println(results.getString(1)+" "+results.getString(2)+" "+results.getString(3)+" "+results.getString(3));
             }
             
         } catch (ClassNotFoundException ex) {
